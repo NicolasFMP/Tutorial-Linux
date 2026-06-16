@@ -1,15 +1,23 @@
 body{
     margin: 0;
-    background-color: slategrey;
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header {
     display: flex;
-    position: sticky;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 30px;
-    background-color: white;
+    background: white;
+    color: black;
 }
 
 header a {
@@ -22,29 +30,66 @@ nav {
     gap: 30px;
 }
 
-.menu-distros{
-    padding: 0 30px;
+.menu-distros {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: slategrey;
+    gap: 10px;
+    background: #c6a904;
     padding: 10px;
 }
 
 .menu-distros a {
-    color: white;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .posts {
-    padding: 30px;
-    color: white;
+    padding: 0 30px;
     font-size: 20px;
 }
 
 details div {
-    background-color: rgb(136, 151, 167);
-    padding: 0 10px 1px
+    background-color: #c6a904;
+    padding: 0 10px 1px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+details summary {
+    margin-bottom: 10px;
 }
 
 .download {
-    font-size: 12px;
+    font-size: 15px;
+}
+
+.distro-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #c6a904;
+    color: black;
+    padding: 1px;
+    text-align: center;
+}
+
+[id] {
+    scroll-margin-top: 138px;
 }

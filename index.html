@@ -3,66 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utilidade</title>
+    <title>Distros Linux</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/icon/Tux.svg">
 </head>
 <body>
-    <header>
-        <h1>Como escolher uma distro</h1>
-
+    <div class="sticky-container">
+       <header>
+        <div class="logo">
+            <img src="images/icon/Tux.svg" width="50px">
+            <h1>Escolha sua distro</h1>
+        </div>
+        
         <nav>
-            <a href="#linux">O que é Linux</a>
-            <a href="#">Distros</a>
+            <a href="#">O que é Linux</a>
+            <a href="#distros">Distros</a>
+            <a href="#proton">Como jogar no Linux</a>
         </nav>
     </header>
 
     <nav class="menu-distros">
-        <a href="#">Ubuntu</a>
-        <a href="#">Debian</a>
-        <a href="#">Mint</a>
-        <a href="#">Fedora</a>
-        <a href="#">Arch</a>
-        <a href="#">Zorin</a>
-        <a href="#">CachyOS</a>
-        <a href="#">Nobara</a>
-        <a href="#">Bazzite</a>
-        <a href="#">Pop!_OS</a>
-        <a href="#">SteamOS</a>
-        <a href="#">AntiX</a>
-        <a href="#">QubesOS</a>
-        <a href="#">Tails</a>
-        <a href="#">SecureBlue</a>
-        <a href="#">NixOS</a>
-        <a href="#">Kali</a>
-    </nav>
+        <a href="#ubuntu">Ubuntu</a>
+        <a href="#debian">Debian</a>
+        <a href="#mint">Mint</a>
+        <a href="#fedora">Fedora</a>
+        <a href="#arch">Arch</a>
+        <a href="#zorin">Zorin OS</a>
+        <a href="#cachyos">CachyOS</a>
+        <a href="#nobara">Nobara</a>
+        <a href="#bazzite">Bazzite</a>
+        <a href="#popos">Pop!_OS</a>
+        <a href="#steamos">SteamOS</a>
+        <a href="#antix">antiX</a>
+        <a href="#q4os">Q4OS</a>
+        <a href="#qubesos">QubesOS</a>
+        <a href="#secureblue">secureblue</a>
+        <a href="#tails">Tails</a>
+        <a href="#nixos">NixOS</a>
+        <a href="#kali">Kali</a>
+    </nav> 
+    </div>
+    
 
     <main class="posts">
         <section>
             <article>
-                <h2 id="linux">O que é Linux?</h2>
+                <h2>O que é Linux?</h2>
 
-                <p>O Linux, de forma mais avançada, não é exatamente um sistema operacional completo sozinho. 
+                <p>
+                    O Linux, de forma mais avançada, não é exatamente um sistema operacional completo sozinho. 
                     Tecnicamente, o Linux é apenas o kernel, ou seja, o núcleo do sistema. Esse kernel foi criado 
                     por Linus Torvalds em 1991 e é responsável por fazer toda a comunicação entre o hardware do 
                     computador e os programas que você usa. Ele gerencia processos, memória, dispositivos e garante 
                     que tudo funcione ao mesmo tempo sem conflitos.
-                        <br><br>
+                    <br><br>
                     Antes mesmo do Linux existir, já havia um grande projeto chamado GNU Project, iniciado por 
                     Richard Stallman em 1983. O objetivo do GNU era criar um sistema operacional totalmente livre, 
                     inspirado no Unix. Esse projeto conseguiu desenvolver quase tudo: compiladores, bibliotecas, 
                     shell e vários comandos essenciais que usamos até hoje, como <b>ls, cp, rm</b> e muitos outros. 
                     O que faltava era justamente um kernel funcional e estável para completar o sistema.
-                        <br><br>
+                    <br><br>
                     Quando o kernel Linux ficou pronto, ele foi combinado com as ferramentas do GNU. Essa junção 
                     criou um sistema operacional utilizável na prática. Por isso, tecnicamente, muitos defendem o 
                     nome “GNU/Linux”, já que o sistema não é apenas o kernel, mas também todo o conjunto de 
                     ferramentas que fazem o ambiente funcionar.
-                        <br><br>
+                    <br><br>
                     As distribuições Linux, como Ubuntu, funcionam como um “pacote completo” que junta o kernel 
                     Linux, as ferramentas do GNU, bibliotecas essenciais, gerenciador de pacotes, interface 
                     gráfica e aplicativos. Outras distribuições, como Arch Linux, seguem uma abordagem mais 
                     minimalista, deixando que o usuário construa o sistema do zero conforme suas necessidades.
-                        <br><br>
+                    <br><br>
                     No fundo, quando alguém diz que usa “Linux”, geralmente está usando um conjunto de 
                     tecnologias: o kernel Linux, as ferramentas do GNU, o shell como o Bash, o sistema de 
                     inicialização como systemd e diversos outros componentes que juntos formam um sistema 
@@ -71,68 +81,834 @@
             </article>
         </section>
 
-        <section>
+        <section id="distros">
             <article>
                 <h2>Distribuições Linux por categorias</h2>
 
                 <details>
                     <summary>Iniciantes / Estáveis</summary>
 
-                    <div>
-                        <h3>Ubuntu</h3>
+                    <div id="ubuntu">
+                        <div class="distro-titulo">
+                            <img src="images/icon/ubuntu.svg" width="40px">
+                            <h3>Ubuntu</h3>
+                        </div>
+                        
                         <a class="download" href="https://ubuntu.com/download/desktop" target="_blank">Download</a>
 
-                        <p>Ubuntu é um sistema operacional composto de software livre e de código aberto e de 
-                            software proprietário na forma de blobs, construído a partir do núcleo Linux, 
-                            baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente 
-                            versão com suporte de longo prazo (LTS). Esta distribuição Linux é desenvolvida 
-                            pela Canonical Ltd.
-                            Geralmente é executado em computadores pessoais e também é popular em servidores 
-                            de rede, geralmente executando a versão Ubuntu Server, com recursos de classe 
-                            empresarial. Até 2017, o Ubuntu também estava disponível para tablets e smartphones, 
-                            com a edição Ubuntu Touch.
+                        <p>
+                            Ubuntu é uma distribuição linux lançada em 20 de outubro de 2024 composto de software 
+                            livre e de código aberto e de software proprietário na forma de blobs, construído a 
+                            partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de 
+                            sua mais recente versão com suporte de longo prazo (LTS). Esta distribuição Linux é 
+                            desenvolvida pela Canonical Ltd.Geralmente é executado em computadores pessoais e 
+                            também é popular em servidores de rede, geralmente executando a versão Ubuntu Server, 
+                            com recursos de classe empresarial. Até 2017, o Ubuntu também estava disponível para 
+                            tablets e smartphones, com a edição Ubuntu Touch.
                         </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>6GB de RAM</li>
+                            <li>Processador 2 GHz dual-core ou melhor</li>
+                            <li>25GB de armazenamento</li>
+                        </ul>
+                        
+                        <div class="screenshots">
+                            <a href="images/screenshots/ubuntu/ubuntu1.png" target="_blank">
+                                <img src="images/screenshots/ubuntu/ubuntu1.png" width="400px">  
+                            </a>
+
+                            <a href="images/screenshots/ubuntu/ubuntu2.png" target="_blank">
+                                <img src="images/screenshots/ubuntu/ubuntu2.png" width="400px">  
+                            </a>
+
+                            <a href="images/screenshots/ubuntu/ubuntu3.png" target="_blank">
+                                <img src="images/screenshots/ubuntu/ubuntu3.png" width="400px">  
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div id="debian">
+                        <div class="distro-titulo">
+                            <img src="images/icon/debian.svg" width="40px">
+                            <h3>Debian</h3>
+                        </div>
+                        
+                        <a class="download" href="https://www.debian.org/" target="_blank">Download</a>
+
+                        <p>
+                            Debian é uma distribuição linux lançada em 16 de agosto de 1993, desenvolvido e mantido 
+                            pelo Projeto Debian, uma associação global de indivíduos fundada por Ian Murdock em 
+                            agosto de 1993. É a segunda mais antiga distribuição Linux em desenvolvimento contínuo, 
+                            superada apenas por Slackware. Por sua confiabilidade e compromisso com o movimento de 
+                            software livre, Debian é amplamente utilizado em servidores, desktops e sistemas 
+                            embarcados, e serve de base para várias outras distribuições, entre elas Ubuntu, 
+                            Linux Mint Debian Edition e Tails. Suporta vários ambientes de desktop, como GNOME,
+                            KDE Plasma, Xfce, LXDE, LXQt e mais.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>1GB de RAM (2GB recomendado)</li>
+                            <li>Processador 1GHz ou melhor</li>
+                            <li>10GB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/debian/debian1.png" target="_blank">
+                                <img src="images/screenshots/debian/debian1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/debian/debian2.png" target="_blank">
+                                <img src="images/screenshots/debian/debian2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/debian/debian3.png" target="_blank">
+                                <img src="images/screenshots/debian/debian3.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="mint">
+                        <div class="distro-titulo">
+                            <img src="images/icon/mint.png" width="40px">
+                            <h3>Mint</h3>
+                        </div>
+                        
+                        <a class="download" href="https://linuxmint.com/" target="_blank">Download</a>
+
+                        <p>
+                            Linux Mint é uma distribuição linux lançada em 27 de setembro de 2006 na Irlanda. 
+                            Possui duas versões: uma baseada em Ubuntu (com o qual é totalmente compatível e 
+                            partilha os mesmos repositórios) e outra versão baseada em Debian. Suporta muitos 
+                            idiomas, incluindo a língua portuguesa, e utiliza o Cinnamon como seu principal 
+                            ambiente de desktop, mas também disponibiliza os ambientes Xfce e Mate. É um sistema 
+                            operacional moderno, elegante e confortável, que é poderoso e fácil de usar. Possui 
+                            suporte da mídia pronto para o uso, incluindo alguns softwares proprietários, e vem 
+                            com uma variedade de aplicativos gratuitos e de código aberto. Ideal para quem quer 
+                            trocar o Windows.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>2GB de RAM (4GB para uso confortável)</li>
+                            <li>20GB de armazenamento (100GB recomendado)</li>
+                            <li>Resolução 1024x768</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/mint/cinnamon.png" target="_blank">
+                                <img src="images/screenshots/mint/cinnamon.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/mint/xfce.png" target="_blank">
+                                <img src="images/screenshots/mint/xfce.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/mint/mate.png" target="_blank">
+                                <img src="images/screenshots/mint/mate.png" width="400px">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div id="zorin">
+                        <div class="distro-titulo">
+                            <img src="images/icon/zorin.png" width="40px">
+                            <h3>Zorin OS</h3>
+                        </div>
+                        
+                        <a class="download" href="https://zorin.com/" target="_blank">Download</a>
+
+                        <p>
+                            Zorin OS é uma distribuição linux lançada em 1 de julho de 2009 baseada no Ubuntu. 
+                            Está principalmente orientada a usuários novatos em Linux, porém familiarizados 
+                            com sistemas operacionais Windows. Utiliza ambientes de desktop GNOME na maior 
+                            parte de suas versões e Xfce em sua versão Lite, que é voltada a computadores 
+                            antigos ou limitados. Esta distribuição tenta fornecer ao usuário, desde o 
+                            primeiro momento, uma interface gráfica similar aos sistemas Windows, junto com 
+                            um determinado grau de compatibilidade com tais sistemas através da utilização 
+                            do WINE. Adicionalmente oferece uma série de pequenas ferramentas próprias as 
+                            quais simplificam algumas configurações relacionadas, como por exemplo, com a 
+                            interface gráfica e/ou seleção do software.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>2GB de RAM</li>
+                            <li>Processador 1GHz dual-core</li>
+                            <li>15GB de armazenamento</li>
+                            <li>Resolução 800x600</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/zorin/zorin1.png" target="_blank">
+                                <img src="images/screenshots/zorin/zorin1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/zorin/zorin2.png" target="_blank">
+                                <img src="images/screenshots/zorin/zorin2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/zorin/zorin3.png" target="_blank">
+                                <img src="images/screenshots/zorin/zorin3.png" width="400px">
+                            </a>
+                        </div>
                     </div>
                 </details>
 
                 <details>
                     <summary>Gaming / Perfomance</summary>
 
-                    <div>
-                        <h3>CachyOS</h3>
+                    <div id="cachyos">
+                        <div class="distro-titulo">
+                            <img src="images/icon/cachyos.svg" width="40px">
+                            <h3>CachyOS</h3>
+                        </div>
+                        
                         <a class="download" href="https://cachyos.org/" target="_blank">Download</a>
 
-                        <p>CachyOS é uma distribuição Linux baseada no Arch Linux. Lançado em 2022, tem o seu foco 
-                            na otimização. segurança do sistema e um suporte melhor para máquinas mais modernas. 
-                            Também é altamente personalizável com vários ambientes de Desktop como GNOME, 
-                            KDE Plasma 6, Xfce, i3, LXQt, Cinnamon, LXDE, MATE, Hyprland e entre outros mais.
+                        <p>
+                            CachyOS é uma distribuição linux lançada em 30 de dezembro de 2022 baseada no 
+                            Arch Linux. Tem o seu foco na otimização. segurança do sistema e um suporte melhor 
+                            para máquinas mais modernas. Também é altamente personalizável com vários ambientes 
+                            de desktop como GNOME, KDE Plasma 6, Xfce, i3, LXQt, Cinnamon, LXDE, MATE, Hyprland 
+                            e entre outros mais. Oferece suporte a videogames portáteis (handhelds), como o 
+                            ROG Ally, Steam Deck OLED e LCD, Legion Go e Lenovo Legion Go S.
                         </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>3GB de RAM (8GB recomendado)</li>
+                            <li>Processador com suporte a x86-64-v3 recomendado</li>
+                            <li>30GB de armazenamento (50GB recomendado)</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/cachyos/cachyos1.png" target="_blank">
+                                <img src="images/screenshots/cachyos/cachyos1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/cachyos/cachyos2.png" target="_blank">
+                                <img src="images/screenshots/cachyos/cachyos2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/cachyos/cachyos3.png" target="_blank">
+                                <img src="images/screenshots/cachyos/cachyos3.png" width="400px">
+                            </a>
+                        </div>
                     </div>
 
-                    <div>
-                        <h3>Nobara</h3>
+                    <div id="nobara">
+                        <div class="distro-titulo">
+                            <img src="images/icon/nobara.svg" width="40px">
+                            <h3>Nobara</h3>
+                        </div>
+                        
                         <a class="download" href="https://nobaraproject.org/" target="_blank">Download</a>
 
                         <p>
-                            Nobara Linux é uma distribuição Linux lançada em 10 de julho de 2022 baseada no 
+                            Nobara é uma distribuição linux lançada em 10 de julho de 2022 baseada no 
                             Fedora Linux . É desenvolvido por Thomas Crider, também conhecido coloquialmente 
                             como "Glorious Eggroll", que também é conhecido por desenvolver o Proton-GE, 
                             uma modificação da camada de compatibilidade da Valve Corporation , amplamente 
-                            utilizada para executar jogos do Windows no Linux.
+                            utilizada para executar jogos do Windows no Linux. Possui como ambiente de desktop:
+                            KDE Customizado, GNOME, KDE Plasma, Steam-HTPC, Steam-Handheld.
                         </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>Não possui</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/nobara/nobara1.png" target="_blank">
+                                <img src="images/screenshots/nobara/nobara1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/nobara/nobara2.png" target="_blank">
+                                <img src="images/screenshots/nobara/nobara2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/nobara/nobara3.png" target="_blank">
+                                <img src="images/screenshots/nobara/nobara3.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="bazzite">
+                        <div class="distro-titulo">
+                            <img src="images/icon/bazzite.svg" width="40px">
+                            <h3>Bazzite</h3>
+                        </div>
+                        
+                        <a class="download" href="https://bazzite.gg/" target="_blank">Download</a>
+
+                        <p>
+                            Bazzite é uma distribuição linux lançada em 12 de novembro de 2023 baseada no 
+                            Fedora Silverblue, desenvolvida pelo projeto comunitário Universal Blue. Projetada 
+                            para ser uma alternativa ao SteamOS 3 da Valve, combina experiência voltada para 
+                            jogos com a funcionalidade de um computador de uso geral. Oferece suporte a 
+                            videogames portáteis (handhelds), incluindo o Steam Deck, 
+                            o ROG Xbox Ally e o Lenovo Legion Go. A distribuição visa proporcionar uma 
+                            experiência acessível e otimizada para jogadores casuais e avançados no Linux.
+                            Possui como ambiente de desktop: GNOME e KDE Plasma.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>8GB de RAM</li>
+                            <li>Processador 2GHz quad-core ou melhor</li>
+                            <li>50GB de armazenamento (120GB recomendado)</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/bazzite/gnome.png" target="_blank">
+                                <img src="images/screenshots/bazzite/gnome.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/bazzite/kde.png" target="_blank">
+                                <img src="images/screenshots/bazzite/kde.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="steamos">
+                        <div class="distro-titulo">
+                            <img src="images/icon/steamos.png" width="40px">
+                            <h3>SteamOS</h3>
+                        </div>
+                        
+                        <a class="download" href="https://help.steampowered.com/pt-br/faqs/view/65B4-2AA3-5F37-4227#install" target="_blank">Download</a>
+                        
+                        <p>
+                            SteamOS é uma distribuição linux lançada em 13 de dezembro de 2013 desenvolvido 
+                            pela Valve Corporation. É uma distribuição de Linux baseado em Arch Linux desenvolvida 
+                            para ser o principal sistema operacional do console Steam Machine, Steam Deck e 
+                            Steam Frame. O SteamOS é código aberto com alguns componentes de código fechado. 
+                            Suas duas primeiras versões eram baseados em Debian, encorajando desenvolvedores a 
+                            incluir compatibilidade com Linux nos lançamentos para melhorar o suporte à jogos. 
+                            Em fevereiro de 2022, a Valve lançou Steam Deck, um console portátil que executa 
+                            o SteamOS 3.0. A partir desta versão, o sistema passou a ser baseado na distribuição 
+                            Arch Linux com KDE Plasma 5.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>4GB de RAM</li>
+                            <li>Processador 64-bit</li>
+                            <li>200GB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/steamos/steamos1.png" target="_blank">
+                                <img src="images/screenshots/steamos/steamos1.png" width="400px">
+                            </a>
+                        </div>
                     </div>
                 </details>
 
                 <details>
                     <summary>Trabalho / Empresarial</summary>
+
+                    <div id="fedora">
+                        <div class="distro-titulo">
+                            <img src="images/icon/fedora.svg" width="40px">
+                            <h3>Fedora</h3>
+                        </div>
+                        
+                        <a class="download" href="https://fedoraproject.org/" target="_blank">Download</a>
+
+                        <p>
+                            Fedora é uma distribuição linux lançada em 5 de novembro de 2003. Seu desenvolvimento 
+                            e suporte é oferecido pela comunidade do Projeto Fedora. Após ter descontinuado o 
+                            sistema operacional Red Hat Linux, a Red Hat patrocina o desenvolvimento do sistema 
+                            operacional Fedora, envolvendo-se no desenvolvimento de vários programas disponíveis 
+                            para o Fedora, que são eventualmente adicionados para o repositório do Red Hat 
+                            Enterprise Linux, que é a distribuição Linux atual da empresa. Possui como ambiente de 
+                            desktop: GNOME e KDE Plasma.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>4GB de RAM</li>
+                            <li>40GB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/fedora/gnome.png" target="_blank">
+                                <img src="images/screenshots/fedora/gnome.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/fedora/kde.png" target="_blank">
+                                <img src="images/screenshots/fedora/kde.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="popos">
+                        <div class="distro-titulo">
+                            <img src="images/icon/popos.svg" width="40px">
+                            <h3>Pop!_OS</h3>
+                        </div>
+                        
+                        <a class="download" href="https://system76.com/pop" target="_blank">Download</a>
+
+                        <p>
+                            Pop!_OS é uma distribuição linux lançada em 27 de outubro de 2017 baseada no Ubuntu, 
+                            e utiliza o COSMIC como ambiente de desktop. A distribuição é desenvolvida pela 
+                            fabricante estadunidense de computadores Linux, chamada System76. O Pop!_OS foi 
+                            desenvolvido principalmente para ser fornecido juntamente com os computadores 
+                            personalizados produzidos pela System76, mas também pode ser baixado e instalado 
+                            na maioria dos computadores. A arte do sistema tem como base o movimento artístico 
+                            pop art dos anos 50.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>4GB de RAM (8GB recomendado)</li>
+                            <li>64-bit x86, ARM (RAS PI 4) arquiteturas</li>
+                            <li>20GB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/popos/popos1.png" target="_blank">
+                                <img src="images/screenshots/popos/popos1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/popos/popos2.png" target="_blank">
+                                <img src="images/screenshots/popos/popos2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/popos/popos3.png" target="_blank">
+                                <img src="images/screenshots/popos/popos3.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
                 </details>
 
                 <details>
                     <summary>Segurança / Privacidade</summary>
+
+                    <div id="qubesos">
+                        <div class="distro-titulo">
+                            <img src="images/icon/qubeos.png" width="40px">
+                            <h3>QubesOS</h3>
+                        </div>
+                        
+                        <a class="download" href="https://www.qubes-os.org/" target="_blank">Download</a>
+
+                        <p>
+                            Qubes OS é uma distribuicao linux lançada em 3 de setembro de 2012 com o foco em 
+                            segurança para desktops com o objetivo de prover segurança através de isolamento. 
+                            O motor de virtualização é o Xen, e os ambientes isolados criados pelo usuário podem 
+                            ser baseados no Fedora, Debian, Whonix e Windows. Domínios baseados em BSDs podem 
+                            ser criados através de templates manuais.No Qubes, o isolamento é feito em duas 
+                            dimensões: controladores de hardware são isolados em domínios funcionais
+                            (GUI, redes, armazenamento), e então a vida digital do usuário é gerenciada através 
+                            de domínios a partir de uma escala de confiança. Por exemplo: domínio de trabalho
+                            (maior confiança), domínio de compras online, domínio randômico(menor confiança). 
+                            Cada domínio é executado em uma máquina virtual distinta.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>6GB de RAM (16GB recomendado)</li>
+                            <li>64-bit (Intel VT-x com EPT ou AMD-V com RVI; Intel VT-d ou AMD-Vi)</li>
+                            <li>Gráfico integrado Intel recomendado </li>
+                            <li>32GB de armazenamento (128GB recomendado)</li>
+                            <li>TPM 1.2</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/qubesos/qubesos1.png" target="_blank">
+                                <img src="images/screenshots/qubesos/qubesos1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/qubesos/qubesos2.png" target="_blank">
+                                <img src="images/screenshots/qubesos/qubesos2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/qubesos/qubesos3.png" target="_blank">
+                                <img src="images/screenshots/qubesos/qubesos3.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="secureblue">
+                        <div class="distro-titulo">
+                            <img src="images/icon/secureblue.png" width="40px">
+                            <h3>secureblue</h3>
+                        </div>
+                        
+                        <a class="download" href="https://secureblue.dev/" target="_blank">Download</a>
+
+                        <p>
+                            O secureblue é uma distribuicao linux lançada em 21 de março de 2024 para desktops e 
+                            servidores focados em segurança, desenvolvido como um projeto de código aberto. Ele é 
+                            distribuído como um conjunto de imagens de contêiner inicializáveis OCI, geradas com 
+                            o BlueBuild, utilizando as imagens base do Fedora Atomic Desktop como ponto de 
+                            partida. O Fedora é uma das poucas distribuições Linux que inclui o SELinux e suas 
+                            ferramentas associadas integrados e ativados por padrão. Isso o torna uma base 
+                            vantajosa para a construção de um sistema desktop seguro. No entanto, a arquitetura 
+                            de segurança do Linux para desktops ainda apresenta diversas limitações 
+                            significativas. O objetivo do secureblue é criar um sistema operacional Linux com o 
+                            máximo de segurança possível, aumentando proativamente as defesas contra a exploração 
+                            de vulnerabilidades conhecidas e desconhecidas, ao mesmo tempo em que busca evitar a 
+                            perda de usabilidade na maioria dos casos de uso. Possui como ambiente de desktop:
+                            GNOME, KDE Plasma e Sway.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>SecureBoot ligado</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/secureblue/secureblue1.png" target="_blank">
+                                <img src="images/screenshots/secureblue/secureblue1.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="tails">
+                        <div class="distro-titulo">
+                            <img src="images/icon/tails.png" width="40px">
+                            <h3>Tails</h3>
+                        </div>
+                        
+                        <a class="download" href="https://tails.net/" target="_blank">Download</a>
+
+                        <p>
+                            Tails, The Amnesic Incognito Live System, é uma distribuição linux lançada em 
+                            23 de junho de 2009 baseada no Debian que tem como objetivo manter a privacidade, 
+                            anonimato e segurança do utilizador e burlar a censura de conteúdo em países. Ele 
+                            se conecta na Internet exclusivamente pela rede anônima Tor. O sistema foi criado 
+                            para funcionar através de CD-executável ou de USB-executável e não deixa vestígios 
+                            tecnológicos, a não ser que o usuário assim o queira. O sistema também pode rodar 
+                            em máquina virtual, apesar de apresentar alguns riscos de segurança. O Tor Project 
+                            proveu suporte financeiro para o desenvolvimento no início do projeto, e continua a 
+                            prover, juntamente com inúmeras corporações e doadores anônimos.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>2GB de RAM</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/tails/tailsos1.png" target="_blank">
+                                <img src="images/screenshots/tails/tailsos1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/tails/tailsos2.png" target="_blank">
+                                <img src="images/screenshots/tails/tailsos2.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/tails/tailsos3.png" target="_blank">
+                                <img src="images/screenshots/tails/tailsos3.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="kali">
+                        <div class="distro-titulo">
+                            <img src="images/icon/kali.png" width="40px">
+                            <h3>Kali</h3>
+                        </div>
+                        
+                        <a class="download" href="https://www.kali.org/" target="_blank">Download</a>
+
+                        <p>
+                            Kali Linux é uma distribuição linux lançada em 13 de março de 2013 baseada no Debian, 
+                            considerado o sucessor do Back Track. O projeto apresenta várias melhorias, além de 
+                            mais aplicativos. É voltado principalmente para auditoria e segurança de computadores 
+                            em geral. É desenvolvido e mantido pela Offensive Security Ltd. Desde 21 de janeiro 
+                            de 2016, é uma distribuição "rolling-release". Possui como ambiente de desktop: Xfce,
+                            GNOME Shell e KDE Plasma.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>2GB de RAM (8GB recomendado)</li>
+                            <li>20GB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/kali/xfce.png" target="_blank">
+                                <img src="images/screenshots/kali/xfce.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/kali/gnome.png" target="_blank">
+                                <img src="images/screenshots/kali/gnome.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/kali/kde.png" target="_blank">
+                                <img src="images/screenshots/kali/kde.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Leve / Computadores fracos</summary>
+
+                    <div id="antix">
+                        <div class="distro-titulo">
+                            <img src="images/icon/antix.svg" width="40px">
+                            <h3>antiX</h3>
+                        </div>
+                        
+                        <a class="download" href="https://antixlinux.com/" target="_blank">Download</a>
+
+                        <p>
+                            O antiX é uma distribuicao linux lançada em 9 de julho de 2007 originalmente baseada 
+                            no MEPIS, que por sua vez e baseada na distribuicao Debian Stable. Inicialmente, o 
+                            antiX substituiu o ambiente de desktop KDE do MEPIS pelos gerenciadores de janelas 
+                            Fluxbox e IceWM, tornando-o adequado para sistemas x86 mais antigos e com menos 
+                            recursos. Diferentemente do Debian, o antiX nao utiliza o sistema de inicializacao 
+                            (init) systemd. Em vez disso, ele disponibiliza uma imagem ISO na qual o Runit é 
+                            configurado como sistema de inicializacao padrao. O objetivo declarado pelos 
+                            desenvolvedores e prolongar significativamente a vida util de computadores antigos 
+                            e novos, selecionando cuidadosamente softwares e componentes do sistema operacional 
+                            que sejam eficientes e leves. Ele deve funcionar na maioria dos computadores, desde 
+                            sistemas antigos com 256 MB de RAM e area de swap pre-configurada ate maquinas 
+                            modernas e poderosas. A quantidade minima recomendada para o antiX e de 512 MB de RAM.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>256MB de RAM com swap (512MB recomendado)</li>
+                            <li>7GB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/antix/antix1.png" target="_blank">
+                                <img src="images/screenshots/antix/antix1.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="q4os">
+                        <div class="distro-titulo">
+                            <img src="images/icon/q4os.svg" width="40px">
+                            <h3>Q4OS</h3>
+                        </div>
+                        
+                        <a class="download" href="https://www.q4os.org/" target="_blank">Download</a>
+
+                        <p>
+                            O Q4OS é uma distribuição linux lançada em 4 de julho de 2013 baseada no Debian. 
+                            Seu principal objetivo é servir como uma alternativa moderna para computadores 
+                            antigos ou com poucos recursos, especialmente aqueles que não recebem mais suporte 
+                            para sistemas operacionais mais recentes. A distribuição é conhecida pelo complemento 
+                            XPQ4, que permite reproduzir a aparência e a experiência de uso de diversas versões 
+                            do Microsoft Windows, incluindo Windows 2000, XP, 7, 8 e 10. Isso torna a transição 
+                            para o Linux mais fácil para usuários acostumados ao ambiente Windows. O Q4OS oferece 
+                            como opção o ambiente de desktop Trinity, conhecido por ser leve, rápido e eficiente, 
+                            sendo considerado por muitos usuários uma alternativa subestimada em comparação a 
+                            outros ambientes gráficos. Diferentemente da maioria das distribuições Linux, que 
+                            não oferecem suporte ao Trinity, o Q4OS disponibiliza esse ambiente como uma opção 
+                            oficial de instalação, ao lado do KDE Plasma. Graças ao seu baixo consumo de recursos 
+                            e foco em desempenho, o Q4OS é uma excelente escolha para revitalizar computadores 
+                            antigos sem abrir mão de estabilidade e facilidade de uso.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>KDE Plasma</li>
+                            <ul>
+                                <li>2GB de RAM</li>
+                                <li>Procesador 1GHz</li>
+                                <li>8GB de armazenamento</li>
+                            </ul>
+
+                            <li>Trinity</li>
+                            <ul>
+                                <li>512MB de RAM</li>
+                                <li>Processador 500MHz</li>
+                                <li>6GB de armazenamento</li>
+                            </ul>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/q4os/q4os1.png" target="_blank">
+                                <img src="images/screenshots/q4os/q4os1.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/q4os/q4os2.png" target="_blank">
+                                <img src="images/screenshots/q4os/q4os2.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Avançadas</summary>
+
+                    <div id="arch">
+                        <div class="distro-titulo">
+                            <img src="images/icon/arch.svg" width="40px">
+                            <h3>Arch</h3>
+                        </div>
+                        
+                        <a class="download" href="https://archlinux.org/download/" target="_blank">Download manual</a>
+                        <a class="download" href="https://github.com/archlinux/archinstall" target="_blank">Download automatico (archinstall)</a>
+                        
+                        <p>
+                            Arch Linux, ou Arch, é uma distribuição linux lançada em 11 de março de 2002 
+                            para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense 
+                            Judd Vinet, esse sistema operacional se apresenta de maneira diferente de outros, 
+                            como Windows e MacOS. Além de ser composto predominantemente por software livre e 
+                            de código aberto, ele envolve contribuições da comunidade. O Arch Linux usa o modelo 
+                            rolling release. Com esse sistema, os usuários podem ter acesso às últimas 
+                            atualizações estáveis dos pacotes e também evita atualizações muito grandes que 
+                            podem gerar erros nos omponentes do sistema. As imagens de instalação lançadas pela 
+                            equipe do Arch são apenas capturas instantâneas de imagens de disco atualizadas dos 
+                            principais componentes do sistema.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>512MiB de RAM</li>
+                            <li>Processador x86_64</li>
+                            <li>2GiB de armazenamento</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/arch/kde.png" target="_blank">
+                                <img src="images/screenshots/arch/kde.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/arch/gnome.png" target="_blank">
+                                <img src="images/screenshots/arch/gnome.png" width="400px">
+                            </a>
+
+                            <a href="images/screenshots/arch/xfce.png" target="_blank">
+                                <img src="images/screenshots/arch/xfce.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="nixos">
+                        <div class="distro-titulo">
+                            <img src="images/icon/nixos.svg" width="40px">
+                            <h3>NixOS</h3>
+                        </div>
+                        
+                        <a class="download" href="https://nixos.org/" target="_blank">Download</a>
+
+                        <p>
+                            O NixOS é uma distribuição Linux lançada em 3 de junho de 2003, construída em torno 
+                            do gerenciador de pacotes Nix. Diferentemente das distribuições Linux tradicionais, 
+                            o NixOS é configurado usando uma linguagem funcional que descreve a configuração 
+                            do sistema. Ele gera perfis completos do sistema, permitindo implantações 
+                            reproduzíveis, atualizações atômicas e reversão de alterações do sistema. O NixOS 
+                            depende da coleção Nixpkgs de definições de pacotes e da linguagem de expressões Nix 
+                            para declarar pacotes e opções do sistema.
+                        </p>
+
+                        <p>Requisitos do Sistema:</p>
+
+                        <ul>
+                            <li>512MB de RAM (4GB recomendado)</li>
+                            <li>4GB de armazenamento (20GB recomendado)</li>
+                        </ul>
+
+                        <div class="screenshots">
+                            <a href="images/screenshots/nixos/nixos1.png" target="_blank">
+                                <img src="images/screenshots/nixos/nixos1.png" width="400px">
+                            </a>
+                        </div>
+                    </div>
                 </details>
             </article>
         </section>
+
+        <section id="proton">
+            <article>
+                <h2>Como rodar jogos no Linux?</h2>
+
+                <p>
+                    Você pode rodar jogos no Linux por meio do Proton, que é uma camada de compatibilidade 
+                    para que jogos de Windows rodem em sistemas operacionais baseados em Linux.
+                    <br><br>
+                    Proton é desenvolvido pela Valve em cooperação com desenvolvedores da CodeWeavers sob 
+                    contrato. É baseado em uma bifurcação do Wine e inclui vários patches e bibliotecas para 
+                    melhorar o desempenho e a compatibilidade com os jogos do Windows. O Proton é projetado 
+                    para integração com o cliente Steam como "Steam Play". 
+                    <br><br>
+                    Atualmente, milhares de jogos funcionam no Linux através do Proton, muitos deles com 
+                    desempenho semelhante ou até superior ao Windows em determinadas configurações. A 
+                    compatibilidade dos jogos pode ser consultada em sites como o 
+                    <a href="https://www.protondb.com/" target="_blank" style="color: black;">ProtonDB</a>, 
+                    onde usuários compartilham suas experiências e configurações. 
+                    <br><br>
+                    Apesar dos avanços, nem todos os jogos funcionam perfeitamente. Alguns 
+                    títulos podem apresentar bugs gráficos, problemas de desempenho ou exigir configurações 
+                    adicionais. Além disso, certos jogos competitivos utilizam sistemas de anti-cheat que não 
+                    possuem suporte adequado para Linux, o que pode impedir seu funcionamento. Exemplos incluem 
+                    alguns jogos que utilizam versões específicas do Easy Anti-Cheat (EAC) ou BattlEye sem 
+                    suporte habilitado pelos desenvolvedores.
+                    <br><br>
+                    Distribuições focadas em jogos, como CachyOS, Bazzite e Nobara, geralmente já incluem 
+                    ferramentas e versões otimizadas do Proton. Porém, em distribuições como Ubuntu, 
+                    Linux Mint, Debian e Fedora, você pode querer instalar versões alternativas, como o 
+                    Proton-GE e Proton-CachyOS, que inclui correções, codecs e patches adicionais para 
+                    melhorar a compatibilidade com alguns jogos.
+                </p>
+            </article>
+
+            <article>
+                <h2>Como instalar o Proton?</h2>
+
+                <p>
+                    A forma mais simples de fazer isso é utilizando o 
+                    <a href="https://flathub.org/en/apps/com.vysp3r.ProtonPlus" target="_blank" 
+                    style="color: black;">ProtonPlus</a>, um gerenciador gráfico de ferramentas de 
+                    compatibilidade para Steam, Lutris, Heroic Games Launcher, Bottles e WineZGUI. Com ele, é 
+                    possível baixar e atualizar automaticamente diferentes versões do Proton sem precisar 
+                    copiar arquivos manualmente.
+                    <br><br>
+                    Para instalar o ProtonPlus via <a href="https://flatpak.org/" target="_blank" 
+                    style="color: black;">Flatpak</a>:
+                    <br><br>
+                    flatpak install flathub com.vysp3r.ProtonPlus
+                    <br><br>
+                    Após instalar, abra o ProtonPlus, selecione o launcher desejado (Steam, Lutris, Heroic, 
+                    Bottles ou WineZGUI) e escolha a versão do Proton que deseja instalar, como Proton-GE ou 
+                    Proton-CachyOS. O programa fará o download e configurará tudo automaticamente.
+                    <br><br>
+                    Depois da instalação, basta abrir a Steam, acessar as configurações, entrar na aba 
+                    "Compatibilidade" e selecionar a versão do Proton instalada. Isso pode resolver problemas 
+                    específicos de desempenho, vídeos que não reproduzem corretamente ou falhas de inicialização 
+                    em alguns jogos.
+                </p>
+            </article>
+        </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <p>© 2026 Escolha sua distro</p>
+    </footer>
 </body>
 </html>
