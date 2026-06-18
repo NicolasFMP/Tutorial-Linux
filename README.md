@@ -2,7 +2,7 @@
 
 Site informativo desenvolvido em HTML e CSS com o objetivo de apresentar diversas distribuições Linux, seus requisitos, características, ambientes gráficos e informações sobre jogos no Linux utilizando Proton.
 
-Acesse o site: https://nicolasfmp.github.io/Tutorial-Linux/
+Acesse o site: https://nicolasfmp.github.io/Distros-Linux/
 
 ## Sobre o Projeto
 
@@ -69,11 +69,11 @@ O Distros Linux é um portal estático criado para auxiliar usuários interessad
 
 1. Clone o repositório
 ```text
-git clone https://github.com/NicolasFMP/Tutorial-Linux.git
+git clone https://github.com/NicolasFMP/Distros-Linux.git
 ```
 2. Entre na pasta
 ```text
-cd Tutorial-Linux
+cd Distros-Linux
 ```
 3. Abra o arquivo: `index.html`
 
@@ -87,7 +87,7 @@ cd Tutorial-Linux
 ## Estrutura do Projeto
 
 ```text
-Tutorial-Linux/
+Distros-Linux/
 │
 ├── images/
 │   ├── desktop/
